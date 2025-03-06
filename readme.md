@@ -3,6 +3,8 @@
 ## Overview
 Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalable, and dynamic web applications. It breaks down large applications into smaller, independent pieces called MFEs, each responsible for a specific functionality.
 
+<img src="maya.svg">
+
 ## Why Use Maya?
 ### Key Features:
 - **Native Micro Front-End Framework:** Each MFE is an encapsulated web component with its own **Shadow DOM**, ensuring isolation and preventing style conflicts.

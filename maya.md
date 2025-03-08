@@ -70,6 +70,8 @@ For example, a **task management MFE** might contain:
 
 This **self-replicating system** makes applications **expandable and reusable** without extra work.
 
+> [maya-child-mfe](maya-child-mfe.md) - deep dive
+
 ---
 ## **5. State Management via Maya Store – Keeping Everything in Sync**
 Maya uses a **single shared store (`Maya.Store`)** to manage data across MFEs. 

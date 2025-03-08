@@ -23,7 +23,7 @@ MFEs are self-contained, independently developed, and deployable web components 
 - **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots, making dynamic rendering seamless.
 - **Separation of Logic and View:** Business logic is managed via **Maya Store**, while the UI is defined in Mustache templates.
 
-[](https://github.com/MoleculeEngineering/mfe-mayadoc/blob/main/maya-data-flow.png)
+![Maya](maya-data-flow.png)
 ---
 
 ## Anatomy of an MFE

@@ -23,7 +23,8 @@ MFEs are self-contained, independently developed, and deployable web components 
 - **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots, making dynamic rendering seamless.
 - **Separation of Logic and View:** Business logic is managed via **Maya Store**, while the UI is defined in Mustache templates.
 
-Data Flow - Call API -> Transform data -> Apply View -> Render HTML
+Data Flow - Call API -> Transform data -> Apply View -> Render HTML 
+
 ![Maya](maya-data-flow.png)
 ---
 

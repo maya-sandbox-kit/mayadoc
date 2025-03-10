@@ -225,6 +225,8 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 [Maya App and How Maya launches MFEs](maya-app.md)
 
+[Loading / Routing MFEs](maya-mfe-loading.md)
+
 [Maya naming conventions](maya-naming-conventions.md)
 
 [Maya & state management](maya-state.md)

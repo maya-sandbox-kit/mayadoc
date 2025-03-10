@@ -10,7 +10,7 @@ This white paper explores:
 
 ---
 ## **1. `maya-maya`: The Root of Every Maya App**
-The `maya-maya` component serves as the **entry point of a Maya App**. It is declared in `index.html` and **sets the namespace (`ns`)** for the application.
+The `maya-maya` component serves as the **entry point of a Maya App**. It is declared in `<namespace>.html` and **sets the namespace (`ns`)** for the application.
 
 ### **Example: Declaring a Maya App**
 ```html
@@ -100,7 +100,7 @@ Maya itself is an **MFE**, meaning it has its **own view (`maya.html`)** that de
 ---
 ## **4. How Maya Launches the Initial Slot**
 When `maya-maya` initializes, it performs the following actions:
-1. **Loads the `ns`-specific index.html file** (e.g., `mfe/albert/index.html`).
+1. **Loads the `ns`-specific index.html file** (e.g., `mfe/albert.html`).
 2. **Initializes slots** and assigns MFEs based on the configuration.
 3. **Loads the first MFEs dynamically**, such as:
    ```javascript

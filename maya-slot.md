@@ -11,6 +11,8 @@ Maya defines **initial slots** (`main`, `header`, `left`, `right`, `center`, `ov
 ## Maya's Predefined Slots
 Maya provides a set of **default slots** that serve as **entry points** for loading MFEs dynamically.
 
+![Maya Slots](maya-slot.png)
+
 | **Slot Name** | **Description** |
 |-------------|---------------|
 | `main` | The primary content area for loading MFEs |

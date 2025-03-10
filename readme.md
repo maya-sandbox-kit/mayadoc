@@ -229,6 +229,8 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 [Maya & state management](maya-state.md)
 
+[Maya event handling & data binding](maya-event-handling.md)
+
 [Child MFE (Fractal Architecture)](maya-child-mfe.md)
 
 [Multiple instances of same MFE](maya-key.md)

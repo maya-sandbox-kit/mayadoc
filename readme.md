@@ -228,6 +228,8 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 [Understanding Maya MFE](maya-mfe.md)
 
+[MFE Anchoring](maya-slot.md)
+
 [Loading / Routing MFEs](maya-mfe-loading.md)
 
 [Maya naming conventions](maya-naming-conventions.md)
@@ -239,8 +241,6 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 [Child MFE (Fractal Architecture)](maya-child-mfe.md)
 
 [Multiple instances of same MFE](maya-key.md)
-
-[MFE Anchoring](maya-slot.md)
 
 [Maya vs Others - React, Amngular, Vue](maya-vs-others.md)
 

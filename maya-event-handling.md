@@ -3,6 +3,8 @@
 ## **Introduction**
 Maya is a **Micro Front-End (MFE) framework** that provides a structured approach to handling **user interactions and events**. One of its most powerful features is its **automatic syncing of input data to `self`**, which ensures **one-way data binding** between UI components and the store. This eliminates the need for manually fetching input values using `document.getElementById()` and simplifies the interaction between the user interface and business logic.
 
+![Maya In Action](mayainaction.png)
+
 This white paper explores:
 1. **How Maya handles default events (`click` & `input`)**
 2. **How `self` is used for automatic data syncing**

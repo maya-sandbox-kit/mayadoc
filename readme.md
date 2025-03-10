@@ -242,6 +242,8 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 [MFE Anchoring](maya-slot.md)
 
+[Maya vs Others - React, Amngular, Vue](maya-vs-others.md)
+
 
 
 

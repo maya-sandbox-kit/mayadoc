@@ -231,7 +231,7 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 [Child MFE (Fractal Architecture)](maya-child-mfe.md)
 
-[Multiple instance of MFE](maya-key.md)
+[Multiple instances of same MFE](maya-key.md)
 
 [MFE Anchoring](maya-slot.md)
 

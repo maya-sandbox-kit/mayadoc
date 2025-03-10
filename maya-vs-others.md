@@ -47,7 +47,24 @@ This paper explores the **key differences** between Maya and other frameworks, h
 - **Data is stored persistently**, reducing re-fetching and improving performance.
 
 ---
-## **4. Event Handling & Communication: Pub/Sub vs. Props & State**
+## **4. Mustache Templates vs. JSX / Angular Templates**
+Maya uses **Mustache templates**, which are simpler and more intuitive compared to JSX (React) or Angular templates.
+
+| **Feature** | **Maya (Mustache Templates)** | **React (JSX)** | **Angular Templates** |
+|------------|----------------|-------------|----------------|
+| **Syntax Complexity** | Simple, logic-less | Requires JavaScript expressions | Uses Angular-specific syntax |
+| **Learning Curve** | Easy to learn | Requires understanding JSX and component lifecycle | Complex (Directives, Pipes, Two-way binding) |
+| **Logic Placement** | Only for templating, separate logic in JS | Mixing UI with JS logic | Templating mixed with TypeScript |
+| **Performance** | Lightweight, pre-compiled | Uses Virtual DOM, additional reconciliation | Heavy runtime processing |
+
+✅ **Why Mustache Templates are Simpler?**
+- **Logic-less approach** keeps templates clean and readable.
+- **No need to learn JSX or Angular-specific syntax**.
+- **Pre-compiled for efficiency**, reducing runtime processing.
+- **No unnecessary re-rendering** like React’s Virtual DOM.
+
+---
+## **5. Event Handling & Communication: Pub/Sub vs. Props & State**
 | **Feature** | **Maya** | **Angular / React / Vue / Next.js** |
 |------------|---------|----------------------------------|
 | **Event Handling** | Pub/Sub (`Maya.Store.Publish/Subscribe`) | Prop drilling, state callbacks |
@@ -60,51 +77,29 @@ This paper explores the **key differences** between Maya and other frameworks, h
 - **No need for `useEffect()`, `onMounted()`, or dependency arrays** to handle updates.
 
 ---
-## **5. Performance & Scalability: Load What You Need**
+## **6. Performance & Scalability: Load What You Need**
 | **Feature** | **Maya** | **Angular / React / Vue / Next.js** |
 |------------|---------|----------------------------------|
 | **Initial Load Time** | Fast, loads only required MFEs | Can be slow due to static imports |
 | **Code Splitting** | Automatic (`Maya.Load()`, `Maya.Route()`) | Needs Webpack, Lazy Loading, or SSR |
 | **Multi-Tenant Support** | Built-in via namespaces | Requires separate build configurations |
 
-✅ **Why Maya is Simpler?**
-- **Only loads what is needed**, reducing memory consumption.
-- **No need for manual code splitting or SSR optimizations**.
-- **Multi-tenancy is supported by design**, allowing multiple MFEs to coexist without conflicts.
-
 ---
-## **6. Deployment & Maintenance: Modular vs. Monolithic**
+## **7. Deployment & Maintenance: Modular vs. Monolithic**
 | **Feature** | **Maya** | **Angular / React / Vue / Next.js** |
 |------------|---------|----------------------------------|
 | **Deployment Model** | Independent MFEs, separately deployable | Monolithic builds (except Next.js microservices) |
 | **Versioning** | Version each MFE separately | Whole app versioned together |
 | **Team Collaboration** | Teams work on independent MFEs | Requires coordination across the codebase |
 
-✅ **Why Maya is Simpler?**
-- **MFEs can be updated independently** without affecting the entire application.
-- **Easier for large teams to collaborate** without codebase conflicts.
-- **No need to bundle everything into a single build** like Angular or Vue apps.
-
 ---
-## **7. Real-World Use Case: How Maya Simplifies Development**
-Imagine building a **dashboard application**:
-- **React/Vue/Angular Approach**: Manages a component tree, handles state, optimizes rerenders, configures routing, and manually manages API calls.
-- **Maya Approach**: Uses `Maya.Load()` to inject each dashboard section as an independent MFE, with automatic state management via `Maya.Store`, and event-driven updates via `Maya.Store.Publish()`.
-
-### **Simpler Maya Workflow:**
-1️⃣ **User clicks a button** → `Maya.Route('dashboard/main?userId=12345')` loads the dashboard.
-2️⃣ **Maya.Store calls API** → `onLoad` fetches data dynamically.
-3️⃣ **Data is transformed and set in `Maya.Store`** → Updates UI instantly.
-4️⃣ **No prop drilling, no extra state management libraries, no rerender complexity.**
-
----
-## **Conclusion: Why Choose Maya?**
+## **8. Conclusion: Why Choose Maya?**
 Maya provides a **simpler, more flexible alternative** to Angular, React, Vue, and Next.js by offering:
 ✅ **Dynamic slot-based MFE architecture** instead of rigid component trees.
 ✅ **Simpler state management (`Maya.Store`) with auto-syncing inputs.**
 ✅ **Pub/Sub event handling instead of prop drilling and state callbacks.**
 ✅ **On-demand MFE loading instead of static rendering.**
 ✅ **Independent deployments with micro front-end scalability.**
+✅ **Lightweight, precompiled Mustache templates instead of JSX or Angular templates.**
 
 By leveraging Maya’s **event-driven, modular design**, developers can build **scalable, maintainable, and performant applications** with **less complexity and greater flexibility** than traditional frameworks. 🚀
-

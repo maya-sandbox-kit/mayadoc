@@ -11,6 +11,7 @@ Maya enables:
 - **Support for multiple instances of components**
 - **Nested structures that can infinitely expand**
 - **A centralized system for managing data and communication**
+- **Event-driven communication and seamless data syncing**
 
 This document explains Maya’s core concepts in **simple terms.**
 
@@ -56,21 +57,35 @@ This removes **only the notification with key `12345`**, while others remain.
 > [maya-key](maya-key.md) - deep dive
 
 ---
-## **4. Fractal Child MFEs – Components Inside Components**
-Maya allows MFEs to **contain other MFEs inside them**. This enables **nested structures** where one MFE can load another, forming a tree-like hierarchy.
+## **4. Event Handling & One-Way Data Binding**
+Maya follows a **one-way data binding model**, where input fields automatically sync data to the store (`Maya.Store.<mfe>.self<key>`). This ensures **real-time state management** without requiring manual event listeners.
 
-Think of this like a **folder system** on your computer:
-- A **main folder** contains subfolders
-- Those **subfolders contain more subfolders**
-- This can continue infinitely, organizing everything neatly
-
-For example, a **task management MFE** might contain:
-- A **task list MFE** inside it
-- Each **task MFE** might contain a **subtask MFE**
-
-This **self-replicating system** makes applications **expandable and reusable** without extra work.
-
-> [maya-child-mfe](maya-child-mfe.md) - deep dive
+### **Example: Auto-Syncing User Input**
+```html
+<maya-input store="userProfile" name="email">
+    <input type="email" placeholder="Enter email">
+</maya-input>
+```
+Whenever a user types into the input field, Maya automatically updates:
+```javascript
+Maya.Store.userProfile.self[<key>].email = 'test@example.com';
+```
+### **Handling Click Events with Operation ID**
+Instead of calling `onclick`, Maya invokes the **`operationId`** specified in the component:
+```html
+<maya-button store="userProfile" operationId="saveUser"></maya-button>
+```
+```javascript
+Maya.Store.userProfile.events.saveUser = async (event) => {
+    let email = Maya.Store.userProfile.self[event.key].email.trim();
+    let response = await fetch('/api/saveUser', {
+        method: 'POST',
+        body: JSON.stringify({ email })
+    });
+    console.log('User saved:', response);
+};
+```
+✅ **No need for `document.getElementById()`, data is auto-synced and accessible in the event handler.**
 
 ---
 ## **5. State Management via Maya Store – Keeping Everything in Sync**
@@ -100,26 +115,7 @@ Maya.Store.userProfile = {
 - **Events like `onLoad()` update data when needed.**
 
 ---
-## **6. PubSub – How MFEs Talk to Each Other**
-Since MFEs are **independent**, they need a way to **communicate**. Maya uses **Publish-Subscribe (PubSub)** to send and receive messages between MFEs.
-
-Imagine a **news channel**:
-- A **publisher** (news reporter) sends updates.
-- **Subscribers** (viewers) listen and receive updates.
-
-Example:
-- **Publisher:**
-```javascript
-Maya.Store.Publish({ topic: 'user-updated' })({ userId: '123' });
-```
-- **Subscriber:**
-```javascript
-Maya.Store.Subscribe({ topic: 'user-updated' })(this);
-```
-Whenever **user data changes**, all MFEs listening for `user-updated` will **automatically update**.
-
----
-## **7. Shared Data & Caching – Making Apps Faster**
+## **6. Shared Data & Caching – Making Apps Faster**
 Instead of **fetching the same data repeatedly**, Maya **caches shared data** for all MFEs.
 
 For example, if a user’s theme preference is stored:
@@ -139,9 +135,9 @@ Maya simplifies **complex applications** by breaking them into **small, reusable
 ✅ **MFEs** make applications modular & reusable.
 ✅ **Slots** dynamically load MFEs without full-page refreshes.
 ✅ **Multi-instance support** allows multiple MFEs in a slot.
-✅ **Fractal MFEs** enable infinite nesting.
-✅ **Maya.Store** centralizes state management.
-✅ **PubSub & caching** improve performance.
+✅ **Event-driven handling ensures seamless UI updates.**
+✅ **One-way data binding eliminates manual input management.**
+✅ **Maya.Store centralizes state management and caching.**
 
-With Maya, developers can build **fast, flexible, and scalable** applications that grow effortlessly—just like the Vedic idea of **Maya’s illusionary, yet infinite nature.**
+With Maya, developers can build **fast, flexible, and scalable** applications that grow effortlessly—just like the Vedic idea of **Maya’s illusionary, yet infinite nature.** 🚀
 

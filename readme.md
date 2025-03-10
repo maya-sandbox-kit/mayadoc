@@ -219,6 +219,24 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 ---
 
-## Conclusion
-Maya provides a powerful **Micro Front-End** architecture that simplifies the development and deployment of modular web applications. It promotes **separation of concerns**, **dynamic loading**, and **scalability**, making it an ideal framework for modern web development.
+## Deep Dive
+
+[Understanding Maya](maya.md)
+
+[Maya App and How Maya launches MFEs](maya-app.md)
+
+[Maya naming conventions](maya-naming-conventions.md)
+
+[Maya & state management](maya-state.md)
+
+[Child MFE (Fractal Architecture)](maya-child-mfe.md)
+
+[Multiple instance of MFE](maya-key.md)
+
+[MFE Anchoring](maya-slot.md)
+
+
+
+
+
 

@@ -13,7 +13,7 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 - **Lightweight and Fast:** Uses pure **HTML, CSS, and JavaScript**, reducing dependency overhead.
 - **CDN Deployment:** MFEs and components can be easily deployed via a **CDN** for faster global distribution.
 
-> [✅ **Maya - deep dive**](readme/maya.md) 
+> [✅ **What is Maya - deep dive**](readme/maya.md) 
 
 <img src="assets/maya-event-flow.svg" alt="">
 

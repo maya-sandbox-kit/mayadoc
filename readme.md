@@ -225,7 +225,7 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 ## Deep Dive
 
-[Maya Developer Guide](maya-cheatsheet.md)
+[Maya Developer Guide](maya-developer.md)
 
 [Maya Cheatsheet](maya-cheatsheet.md)
 

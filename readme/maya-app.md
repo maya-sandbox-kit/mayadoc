@@ -117,9 +117,11 @@ Maya’s **slot-based architecture** and **namespace-driven initialization** mak
 
 ### **Key Takeaways:**
 ✅ **`maya-maya` is the root component of every Maya App**.
-✅ **Slots (`main`, `left`, `right`, etc.) act as anchors for MFEs**.
-✅ **Maya itself is an MFE with `maya.html` defining its layout**.
-✅ **Apps initialize dynamically using namespaces (`ns`) to locate the correct index file**.
-✅ **Only required MFEs are loaded initially, ensuring better performance**.
 
-By following this structured approach, developers can build **scalable and modular web applications using Maya**. 🚀
+✅ **Slots (`main`, `left`, `right`, etc.) act as anchors for MFEs**.
+
+✅ **Maya itself is an MFE with `maya.html` defining its layout**.
+
+✅ **Apps initialize dynamically using namespaces (`ns`) to locate the correct index file**.
+
+✅ **Only required MFEs are loaded initially, ensuring better performance**.

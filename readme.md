@@ -14,6 +14,7 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 - **CDN Deployment:** MFEs and components can be easily deployed via a **CDN** for faster global distribution.
 
 <img src="maya-event-flow.svg" alt="">
+![Maya](maya-data-flow.png)
 
 ---
 
@@ -26,9 +27,6 @@ MFEs are self-contained, independently developed, and deployable web components 
 - **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots, making dynamic rendering seamless.
 - **Separation of Logic and View:** Business logic is managed via **Maya Store**, while the UI is defined in Mustache templates.
 
-Data Flow - Call API -> Transform data -> Apply View -> Render HTML 
-
-![Maya](maya-data-flow.png)
 ---
 
 ## Anatomy of an MFE

@@ -48,7 +48,7 @@ An MFE typically includes:
 ### Naming Conventions:
 - **✅ MFE Name:** Lowercase, no spaces or special characters.
 - **✅ Store Name:** Same as the MFE name.
-- **✅ Child MFE Naming:** Prefix with parent MFE name. Declare in the parent js file.
+- **✅ Child MFE Naming:** Prefix with parent MFE name. Declare in the parent js file. Has it's own store.
 
 ---
 

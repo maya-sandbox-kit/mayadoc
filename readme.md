@@ -10,7 +10,7 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 - **Dynamic Loading Using Slots:** Uses the `<slot>` tag to load MFEs dynamically, ensuring efficient resource usage and faster load times.
 - **Decentralized State Management:** Each MFE maintains its own store and event handlers.
 - **Separation of Concerns:** Utilizes **Mustache templates** for rendering views and a centralized store to manage state.
-- **Lightweight and Fast:** Uses pure **HTML, CSS, and JavaScript**, reducing dependency overhead.
+- **Lightweight and Fast:** Uses pure **HTML (Mustache template), CSS, and JavaScript**, reducing dependency overhead.
 - **CDN Deployment:** MFEs and components can be easily deployed via a **CDN** for faster global distribution.
 
 > [✅ **What is Maya - deep dive**](readme/maya.md) 

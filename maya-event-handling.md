@@ -10,6 +10,8 @@ This white paper explores:
 4. **How event handlers extract `self` data, transform it, and call APIs**
 5. **Advantages of self-syncing and eliminating manual DOM queries**
 
+<img src="maya-event-flow.svg" alt="">
+
 ---
 ## **1. Default Event Handling in Maya**
 By default, Maya listens for **click and input events** on **Maya components**. These events trigger **operations** defined within the corresponding MFE’s store, rather than calling an MFE’s `onclick` or `oninput` method directly.

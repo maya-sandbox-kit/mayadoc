@@ -1,7 +1,7 @@
 # Maya - A Micro Front-End Framework
 
 ## Overview
-![Maya - Illusion](Maya-Illusion-Matrix.webp)
+![Maya - Illusion](assets/Maya-Illusion-Matrix.webp)
 Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalable, and dynamic web applications. It breaks down large applications into smaller, independent pieces called MFEs, each responsible for a specific functionality.
 
 ## Why Use Maya?
@@ -13,11 +13,11 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 - **Lightweight and Fast:** Uses pure **HTML, CSS, and JavaScript**, reducing dependency overhead.
 - **CDN Deployment:** MFEs and components can be easily deployed via a **CDN** for faster global distribution.
 
-> [Maya - deep dive](maya.md) 
+> [Maya - deep dive](readme/maya.md) 
 
-<img src="maya-event-flow.svg" alt="">
+<img src="assets/maya-event-flow.svg" alt="">
 
-![Maya](maya-data-flow.png)
+![Maya](assets/maya-data-flow.png)
 
 ---
 
@@ -225,35 +225,35 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 ## Deep Dive
 
-[Maya Developer Guide](maya-developer.md)
+[Maya Developer Guide](readme/maya-developer.md)
 
-[Maya Cheatsheet](maya-cheatsheet.md)
+[Maya Cheatsheet](readme/maya-cheatsheet.md)
 
-[Understanding Maya](maya.md)
+[Understanding Maya](readme/maya.md)
 
-[Maya App and How Maya launches MFEs](maya-app.md)
+[Maya App and How Maya launches MFEs](readme/maya-app.md)
 
-[Understanding Maya MFE](maya-mfe.md)
+[Understanding Maya MFE](readme/maya-mfe.md)
 
-[MFE Anchoring](maya-slot.md)
+[MFE Anchoring](readme/maya-slot.md)
 
-[Loading / Routing MFEs](maya-mfe-loading.md)
+[Loading / Routing MFEs](readme/maya-mfe-loading.md)
 
-[Maya naming conventions](maya-naming-conventions.md)
+[Maya naming conventions](readme/maya-naming-conventions.md)
 
-[Maya & state management](maya-state.md)
+[Maya & state management](readme/maya-state.md)
 
-[Maya event handling & data binding](maya-event-handling.md)
+[Maya event handling & data binding](readme/maya-event-handling.md)
 
-[Child MFE (Fractal Architecture)](maya-child-mfe.md)
+[Child MFE (Fractal Architecture)](readme/maya-child-mfe.md)
 
-[Multiple instances of same MFE](maya-key.md)
+[Multiple instances of same MFE](readme/maya-key.md)
 
-[Maya vs Others - React, Amngular, Vue](maya-vs-others.md)
+[Maya vs Others - React, Amngular, Vue](readme/maya-vs-others.md)
 
 
 ## Podcast
-[Maya](podcast-maya.wav)
+[Maya](assets/podcast-maya.wav)
 
 
 

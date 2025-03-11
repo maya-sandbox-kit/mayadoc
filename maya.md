@@ -15,6 +15,8 @@ Maya enables:
 
 This document explains Maya’s core concepts in **simple terms.**
 
+<img src="maya-event-flow.svg" alt="">
+
 ---
 ## **1. Micro Front-Ends (MFEs) – The Building Blocks**
 Think of an application as a **house**. Instead of building it all at once, you construct it **room by room**. Each room serves a different function and can be modified without affecting the others.

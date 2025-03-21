@@ -60,8 +60,7 @@ Each MFE has an associated **store** that manages its state and events.
 #### Example: Declaring an MFE and Store
 ```javascript
 Maya.Store.inventory = {
-    name: 'inventory',
-    data: {},
+    name: 'inven
     events: {
         onLoad: async (options) => {
             if (options.view === 'detail') {
@@ -86,7 +85,7 @@ class InventoryMFE extends MayaMFE {
     };
 }
 
-window.customElements.define('albert-inventory', InventoryMFE);
+Maya.Register({ name : 'inventory'})(InventoryMFE);
 ```
 
 ---

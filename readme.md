@@ -18,19 +18,19 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 
 <img src="assets/maya-event-flow.svg" alt="">
 
-## Data  Flow : API -> Transformation -> Store Update -> Apply View -> HTML
-![Maya](assets/maya.png)
-
 ---
 
 ## MFEs: The Building Blocks of Maya Applications
 MFEs are self-contained, independently developed, and deployable web components that form the foundation of a Maya application.
 
 ### Characteristics of an MFE:
-- **Self-contained:** Each MFE has its own **JavaScript** (`index.js`) and **HTML views** (`Mustache templates`).
-- **Independent:** MFEs can be developed, tested, and deployed separately.
+- **Self-contained:** Each MFE has its own **JavaScript** (`index.js`) and **HTML views** (`Mustache templates`). You can decalre and / or import as many inner MFEs inside the primary MFE index.js. Inner MFE's cannot be Routed (URL loaded) but can be dynamocally Loaded (javascript) at any Slots.
+- **Independent:** MFEs are developed, tested, and deployed separately. Maya maintains a simple directory structure for each MFE. 
 - **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots, making dynamic rendering seamless.
 - **Separation of Logic and View:** Business logic is managed via **Maya Store**, while the UI is defined in Mustache templates.
+
+#### Data  Flow : API -> Transformation -> Store Update -> Apply View -> HTML
+![Maya](assets/maya.png)
 
 > [✅ **MFEs are launched inside Maya app - learn more**](readme/maya-app.md)
 

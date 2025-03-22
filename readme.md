@@ -19,7 +19,7 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 <img src="assets/maya-event-flow.svg" alt="">
 
 
-## Data  Flow - API -> Transformation -> Store Update -> Apply View -> HTML
+## Data  Flow : API -> Transformation -> Store Update -> Apply View -> HTML
 ![Maya](assets/maya.png)
 
 ---

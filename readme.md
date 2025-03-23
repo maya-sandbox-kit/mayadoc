@@ -25,9 +25,9 @@ MFEs are self-contained, independently developed, and deployable web components 
 
 ### Characteristics of an MFE:
 - **Self-contained:** Each MFE has its own **JavaScript** (`index.js`) and **HTML views** (`Mustache templates`). You can decalre and / or import as many inner MFEs inside the primary MFE index.js. Inner MFE's cannot be Routed (URL loaded) but can be dynamocally Loaded (javascript) at any Slots.
-- **Independent:** MFEs are developed, tested, and deployed separately. Maya maintains a simple directory structure for each MFE. 
-- **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots, making dynamic rendering seamless.
-- **Separation of Logic and View:** Business logic is managed via **Maya Store**, while the UI is defined in Mustache templates.
+- **Independent:** MFEs are independently developed, tested, and deployed, allowing for true modularity. Maya enforces a straightforward directory structure for each MFE, keeping organization simple and consistent. 
+- **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots, making dynamic rendering seamless. Beyond just fitting into existing slots, MFEs can declare their own slots—effectively creating new anchor points for other MFEs. This recursive capability forms a fractal architecture, where MFEs can continuously nest and grow the application modularly. Each layer expands the surface for new MFEs, enabling infinite composability within a self-contained structure.
+- **Separation of Logic and View:** Business logic is managed via **Maya Store**, while the UI is defined in Mustache templates. MFEs are self-contained web components responsible for hosting their views. While the UI is defined using Mustache templates, the business logic and state management are handled through the Maya Store. 
 
 #### Data  Flow : API -> Transformation -> Store Update -> Apply View -> HTML
 ![Maya](assets/maya.png)

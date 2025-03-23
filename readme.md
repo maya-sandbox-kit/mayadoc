@@ -186,13 +186,23 @@ Maya.Store.Publish({ topic: 'helloworld' })({ msg: "Hello Neelesh!" });
 
 // Subscriber
 Maya.Store.Subscribe({ topic: 'helloworld' })(this);
+
+// Delivery - MFE : onMessage
+onMessage = (option) => async (msg) => {
+  console.log("Message received:", msg);
+  // Add custom logic here
+};
+
 ```
 
 ### Shared Data (Global State)
 ```javascript
+// Set Shared Data
 Maya.Store.SetSharedData({ key: 'globalData' })(data);
-```
 
+// Get Shared Data
+const data = Maya.Store.GetSharedData({ key: 'globalData' });
+```
 ---
 
 ## Lifecycle Management

@@ -51,7 +51,7 @@ An MFE typically includes:
 - **✅ MFE Name:** Lowercase, no spaces or special characters. e.g : inventory
 - **✅ Store Name:** Same as the MFE name. e.g : inventory
 - **✅ Child MFE Naming:** Prefix with parent MFE name. Declare in the parent js file. Has it's own store. e.g : inventory-lots
-- **✅ Web Component Declaration:** namespance-mfe. e.g : albert-inventory
+- **✅ Registration:** MFE name. e.g : inventory
 
 ---
 

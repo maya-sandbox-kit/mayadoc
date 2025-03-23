@@ -121,8 +121,9 @@ Maya uses **Mustache-based HTML templates** stored in the `/view/` folder.
 Maya allows independent deployment of MFEs. MFEs are dynamically loaded into **slots**.
 
 #### Browser Loading: 
+MFE can be launched using #mfe anytime, in the browser.
 ```html
-https://app.albertinvent.com#inventory[/view]
+https://app.albertinvent.com#inventory[/view][?target='main']
 ```
 
 #### Static Slot Declaration: 
@@ -159,11 +160,14 @@ Maya.Store.SetData({ store: 'inventory', key: options.key, name : 'email' })('ne
 ## Event Handling
 Maya components trigger event handlers defined in the **store**.
 
+Maya uses attribute : **operationId** to trigger the handler, defined under the events
+```
+<albert-inventory-item store="inventory-item" operationId="OnDelete"></albert-inventory-item>
+```
+
 #### Example: Handling Events
 ```javascript
-Maya.Store.sample = {
-    name: 'sample',
-    data: {},
+Maya.Store.['inventory-item'] = {
     events: {
         OnDelete: async ev => { Maya.Close({target: 'mfe', key: ev.key })}
     }

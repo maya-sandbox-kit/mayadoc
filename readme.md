@@ -120,7 +120,12 @@ Maya uses **Mustache-based HTML templates** stored in the `/view/` folder.
 ## Deployment and Loading
 Maya allows independent deployment of MFEs. MFEs are dynamically loaded into **slots**.
 
-#### Static Slot Declaration:
+#### Browser Loading: 
+```html
+https://app.albertinvent.com#inventory[/view]
+```
+
+#### Static Slot Declaration: 
 ```html
 <albert-inventory slot="main"></albert-inventory>
 ```

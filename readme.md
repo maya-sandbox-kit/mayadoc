@@ -7,7 +7,7 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 ## Why Use Maya?
 ### Key Features:
 - **⚛️ Native Micro Front-End Framework:** Each MFE is an encapsulated web component with its own **Shadow DOM**, ensuring isolation and preventing style conflicts.
-- **🏄 Dynamic Loading Using Slots:** Uses the `<maya-slot>` tag to load MFEs dynamically, ensuring efficient resource usage and faster load times.
+- **🏄 Dynamic Loading Using Slots:** Uses the `<slot>` tag to load MFEs dynamically, ensuring efficient resource usage and faster load times.
 - **🎡 Decentralized State Management:** Each MFE maintains its own store and event handlers.
 - **☀️ Separation of Concerns:** Utilizes **Mustache templates** for rendering views and a centralized store to manage state.
 - **🚀 Lightweight and Fast:** Uses pure **HTML (Mustache template), CSS, and JavaScript**, reducing dependency overhead.
@@ -26,7 +26,7 @@ MFEs are self-contained, independently developed, and deployable web components 
 ### Characteristics of an MFE:
 - **Self-contained:** Each MFE has its own **JavaScript** (`index.js`) and **HTML views** (`Mustache templates`). You can decalre and / or import as many inner MFEs inside the primary MFE index.js. Inner MFE's cannot be Routed (URL loaded) but can be dynamocally Loaded (javascript) at any Slots.
 - **Independent:** MFEs are independently developed, tested, and deployed, allowing for true modularity. Maya enforces a straightforward directory structure for each MFE, keeping organization simple and consistent. 
-- **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots, making dynamic rendering seamless. Beyond just fitting into existing slots, MFEs can declare their own slots—effectively creating new anchor points for other MFEs. This recursive capability forms a fractal architecture, where MFEs can continuously nest and grow the application modularly. Each layer expands the surface for new MFEs, enabling infinite composability within a self-contained structure.
+- **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots (main, center, overl, left, right, menu, submenu etc...), making dynamic rendering seamless. Beyond just fitting into existing slots, MFEs can declare their own slots, effectively creating new anchor points for other MFEs. This recursive capability forms a fractal architecture, where MFEs can continuously nest and grow the application modularly. Each layer expands the surface for new MFEs, enabling infinite composability within a self-contained structure.
 - **Separation of Logic and View:** Business logic is managed via **Maya Store**, while the UI is defined in Mustache templates. MFEs are self-contained web components responsible for hosting their views. While the UI is defined using Mustache templates, the business logic and state management are handled through the Maya Store. 
 
 #### Data  Flow : API -> Transformation -> Store Update -> Apply View -> HTML

@@ -7,7 +7,7 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 ## Why Use Maya?
 ### Key Features:
 - **⚛️ Native Micro Front-End Framework:** Each MFE is an encapsulated web component with its own **Shadow DOM**, ensuring isolation and preventing style conflicts.
-- **🏄 Dynamic Loading Using Slots:** Uses the `<slot>` tag to load MFEs dynamically, ensuring efficient resource usage and faster load times.
+- **🏄 Dynamic Loading Using Slots:** Uses the `<maya-slot>` tag to load MFEs dynamically, ensuring efficient resource usage and faster load times.
 - **🎡 Decentralized State Management:** Each MFE maintains its own store and event handlers.
 - **☀️ Separation of Concerns:** Utilizes **Mustache templates** for rendering views and a centralized store to manage state.
 - **🚀 Lightweight and Fast:** Uses pure **HTML (Mustache template), CSS, and JavaScript**, reducing dependency overhead.

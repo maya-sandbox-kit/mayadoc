@@ -139,12 +139,19 @@ Maya.Load('inventory[/main | detail][?target=main]');  // No Location Change
 ---
 
 ## State Management
-Maya MFEs store data using `Maya.Store.SetData`. Each MFE instance gets a **unique key**, ensuring data integrity across multiple instances.
+Maya MFEs store data using `Maya.Store.SetData`. Each MFE instance gets a **unique key**, ensuring data integrity across multiple instances. Setting the Store re-renders the MFE with existing / specified view.
 
 #### Example: Setting Data in Store
 ```javascript
 const data = await Maya.API.searchInventories({ limit: 50 });
 Maya.Store.SetData({ store: 'inventory', key: options.key })(data);
+```
+
+#### Example: Setting a named property inside the Data in Store
+This will re-render the inner MFE attached to 'email' change...
+```javascript
+const data = await Maya.API.searchInventories({ limit: 50 });
+Maya.Store.SetData({ store: 'inventory', key: options.key, name : 'email' })('neelesh@albertinvent.com');
 ```
 
 ---

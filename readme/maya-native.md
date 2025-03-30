@@ -27,6 +27,8 @@ Every MFE is stored in its own **dedicated Git repository**, offering:
 - Isolated version control and change history
 - Cleaner, conflict-free collaboration
 
+> Maya MFE : [inventory](https://github.com/maya-dev-kit/inventory),  [lot](https://github.com/maya-dev-kit/lot) etc...
+
 This structure promotes **bounded contexts** and allows each MFE to evolve independently.
 
 #### 3. Decentralized CI/CD Pipelines

@@ -1,5 +1,3 @@
-**White Paper: Understanding Maya Slots – The Backbone of Maya's Modular Architecture**
-
 ## Introduction
 Maya is a **Micro Front-End (MFE) framework** designed to build **modular, scalable, and dynamic** web applications. It breaks down large applications into smaller, independent pieces called **MFEs**, each responsible for a specific functionality. The name **Maya** comes from **Vedic philosophy**, where **Maya** means **illusion**—the idea that what we see is just a part of a larger, hidden reality. Similarly, the Maya framework allows applications to appear as one unified system, while under the hood, they are made up of many independent components working together seamlessly. 
 

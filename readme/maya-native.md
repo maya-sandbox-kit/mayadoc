@@ -3,6 +3,8 @@
 #### 1. Native Web Component Foundation
 At its core, Maya utilizes **Web Components** to encapsulate functionality and styles via the Shadow DOM. Each MFE is a custom HTML element, declared using `customElements.define()`, ensuring self-contained behavior and appearance.
 
+![Maya - slot](assets/maya-slot2.png)
+
 #### 2. Independent Git Repositories
 Every MFE is stored in its own **dedicated Git repository**, offering:
 - Complete autonomy for feature teams

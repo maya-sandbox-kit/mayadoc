@@ -1,7 +1,3 @@
-Here’s a **Maya Developer Guide** with samples for developing MFEs in **Maya**. This guide consolidates the architecture, lifecycle, state management, communication, and deployment of Maya applications.
-
----
-
 # **Maya Developer Guide**
 
 ## **1. Overview**

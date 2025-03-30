@@ -1,21 +1,3 @@
-**White Paper: Embracing Native Micro Front-End Architecture with Maya**
-
----
-
-### Abstract
-
-This white paper explores the emerging paradigm of Native Micro Front-End (MFE) architecture and how Maya, a purpose-built framework, is redefining modular front-end development. We discuss Maya's adoption of web standards, such as Web Components and Shadow DOM, its use of decentralized Git repositories and CI/CD pipelines, and the practical implications of deploying MFEs in enterprise environments.
-
----
-
-### Introduction
-
-Enterprise-grade front-end applications are increasingly becoming large, complex, and hard to maintain. As organizations scale their engineering teams, the traditional monolithic approach to front-end development becomes a bottleneck for velocity, autonomy, and scalability. Enter **Native Micro Front-Ends**—a methodology that decouples the front-end into modular, independently deployable units.
-
-**Maya** is a framework built from the ground up to support native MFE development using standard browser APIs. It abstracts complexity while enabling rapid development, independent deployments, and seamless user experiences.
-
----
-
 ### Core Principles of Maya
 
 #### 1. Native Web Component Foundation

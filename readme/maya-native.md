@@ -25,6 +25,8 @@ Maya enables each MFE to have its own CI/CD pipeline with independent configurat
 
 Updates are propagated using a `version.json` manifest that ensures the parent Maya app always resolves the latest or specific version of a given MFE.
 
+![Maya - slot](../assets/maya-cicd.png)
+
 ---
 
 ### Anatomy of a Maya MFE

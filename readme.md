@@ -22,7 +22,7 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 ## MFEs: The Building Blocks of Maya Applications
 MFEs are self-contained, independently developed, and deployable web components that form the foundation of a Maya application.
 
-### Characteristics of an MFE:
+### [Characteristics of an MFE](readme/maya-mfe.md):
 - **Self-contained:** Each MFE has its own **JavaScript** (`index.js`) and **HTML views** (`Mustache templates`). You can decalre and / or import as many inner MFEs inside the primary MFE index.js. Inner MFE's cannot be Routed (URL loaded) but can be dynamocally Loaded (javascript) at any Slots.
 - **Independent:** MFEs are independently developed, tested, and deployed, allowing for true modularity. Maya enforces a straightforward directory structure for each MFE, keeping organization simple and consistent. 
 - **Loose Coupling via Slots:** MFEs anchor themselves to predefined slots (main, center, overl, left, right, menu, submenu etc...), making dynamic rendering seamless. Beyond just fitting into existing slots, MFEs can declare their own slots, effectively creating new anchor points for other MFEs. This recursive capability forms a fractal architecture, where MFEs can continuously nest and grow the application modularly. Each layer expands the surface for new MFEs, enabling infinite composability within a self-contained structure.

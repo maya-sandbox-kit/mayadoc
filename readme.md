@@ -232,7 +232,7 @@ Maya.SetExternalDependency([{ name: 'lib', path: '<url>' }]);
 ## Application Initialization and Navigation
 Maya initializes the application using the `maya-maya` component.
 
-### Routing and Navigation:
+### [Routing and Navigation](readme/maya-mfe-loading.md):
 ```javascript
 Maya.Route('inventory/main');  // Updates URL
 Maya.Load('inventory/main');  // Loads without changing URL
@@ -240,7 +240,7 @@ Maya.Load('inventory/main');  // Loads without changing URL
 
 ---
 
-## Versioning
+## [Versioning](readme/maya-version.md)
 Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache is invalidated**, ensuring users fetch the latest assets.
 
 ```json

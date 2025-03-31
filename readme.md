@@ -13,9 +13,9 @@ Maya is a **Micro Front-End (MFE) framework** designed to build modular, scalabl
 - [**✉️ Pubsub for MFE 2 MFE communication:**](readme/maya-pubsub.md) Asynchronous message based communcation between MFEs.
 - [**☁️ CDN Deployment:**](readme/maya-version.md) MFEs and components can be easily deployed via a **CDN** for faster global distribution.
 
-> [✅ **What is Maya - deep dive**](readme/maya.md) 
-
 <img src="assets/maya.svg" alt="">
+
+> [✅ **What is Maya - deep dive**](readme/maya.md) 
 
 ---
 

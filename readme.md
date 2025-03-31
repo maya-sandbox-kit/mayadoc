@@ -263,7 +263,7 @@ Maya tracks MFE versions via `version.json`. On deployment, **CloudFront cache i
 
 [Understanding Maya MFE](readme/maya-mfe.md)
 
-[MFE Anchoring](readme/maya-slot.md)
+[MFE Slots (Anchoring)](readme/maya-slot.md)
 
 [Loading / Routing MFEs](readme/maya-mfe-loading.md)
 

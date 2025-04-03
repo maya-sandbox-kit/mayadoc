@@ -21,7 +21,7 @@
 - NFEs are **lighter, more granular frontend units** than MFEs.  
 - Unlike MFEs, **NFEs do not have their own `index.js`**; they **piggyback on the parent MFE’s logic**.  
 - NFEs **are NOT directly tied to Maya Components**, but they **can use** both **Maya Components and custom UI components**.  
-- They **do not use slots** like MFEs; instead, they are **embedded directly** within MFEs.  
+- They **can use slots** like MFEs; or, they are **embedded directly** within MFEs.  
 - **State Management** happens via the **parent MFE’s store** (`Maya.Store.SetData`).  
 - NFEs typically handle **specific functional areas within an MFE**, such as:  
   - **Form sections**  

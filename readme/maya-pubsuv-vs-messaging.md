@@ -36,6 +36,9 @@ await Maya.Store.childstore.events.load({
   parent: this,
   view: 'summary'
 });
+
+// OR 
+await Maya.Store.childstore.events.load(ev)
 ```
 
 **Benefits:**
